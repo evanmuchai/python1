@@ -1,0 +1,29 @@
+def test():
+    userentry=raw_input("Please enter a number between 0 and 9 then press Enter:")
+    print "Did you enter a number in the line above?"
+    numconfirm=raw_input("Enter 'y' if you did, 'n' if not, then press 'Enter':")
+
+    if numconfirm=="y":
+        userentry=int(userentry)
+        numcheck=True
+    else:
+        numcheck=False
+        
+    """
+    if userentry>=5 and numcheck==True:
+        print "So you're a glass-half-full kinda guy huh? AWESOME!"
+    elif userentry<5 and userentry>0 and numcheck=True:
+        print "OK. You're on the glass-half-empty side of the world. We need to work on that."
+    elif userentry=0 and numcheck=True:
+        print "Urmm. We need to work on your self-esteem."
+    """
+    if numcheck==False:
+        print "Learn to follow directions! Please enter a number next time. GOOOOOD-BYE!"
+    else:
+        if userentry>=5:
+            print "So you're a glass-half-full kinda guy huh? AWESOME!"
+        elif userentry<5 and userentry>0:
+            print "OK. You're on the glass-half-empty side of the world. We need to work on that."
+        elif userentry==0:
+            print "Urmm. We need to work on your self-esteem."
+test()
