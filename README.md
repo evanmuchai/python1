@@ -1,4 +1,4 @@
-python1
+Python1
 =======
 
 Glass Half Full test project
